@@ -4,7 +4,7 @@
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 # Background Image
-IMAGE="$HOME/.config/wayfire/wallpapers/lockscreen.png"
+IMAGE="/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg"
 
 # Colors
 bg='1E212A'		bgl='2D3039'		fg='E0DEF4'
