@@ -24,7 +24,7 @@
     "ipc": true, 					// Control waybar with `swaymsg bar` commands
     
     // Choose the order of the modules
-    "modules-left": ["custom/menu", "disk","memory", "mpd"],
+    "modules-left": ["custom/menu", "disk","memory"],
     "modules-center": ["wlr/taskbar"],
     "modules-right": ["tray", "custom/updater", "custom/weather", "pulseaudio", "network", "clock", "custom/power"],
 }
