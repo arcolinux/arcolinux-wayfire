@@ -4,14 +4,14 @@
 show=drun
 prompt=Apps
 normal_window=true
-layer=top
+layer=overlay
 term=kitty
-columns=2
+columns=5
 
 ## Geometry
-width=700px
-height=500px
-location=0
+width=80%
+height=80%
+#location=0
 orientation=vertical
 halign=fill
 line_wrap=off
