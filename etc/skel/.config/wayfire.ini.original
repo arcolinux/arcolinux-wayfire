@@ -15,7 +15,6 @@
 # [input]
 # xkb_layout = us,fr
 # xkb_variant = dvorak,bepo
-# xkb_options = grp:win_space_toggle
 #
 # See Input options for a complete reference.
 # https://github.com/WayfireWM/wayfire/wiki/Configuration#input
@@ -64,7 +63,6 @@ plugins = \
   oswitch \
   place \
   resize \
-  shortcuts-inhibit \
   switcher \
   vswitch \
   wayfire-shell \
