@@ -5,7 +5,7 @@
 
 ## launch waybar with alt config
 
-CONFIG="$HOME/.config/wayfire/waybar/config"
+CONFIG="$HOME/.config/wayfire/waybar/config.ini"
 STYLE="$HOME/.config/wayfire/waybar/style.css"
 
 if [[ ! `pidof waybar` ]]; then
