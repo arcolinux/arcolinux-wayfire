@@ -228,7 +228,7 @@
          "all-outputs": false,
          "active-first": false,
          "icon-size": 24,
-         "icon-theme": "Zafiro",
+         "icon-theme": "a-candy-beauty-icon-theme",
          "tooltip-format": "{title}",
          //"ignore-list": [
          //    "Alacritty"
