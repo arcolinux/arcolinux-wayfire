@@ -50,7 +50,7 @@
 
 	// waybar-clock
     "clock": {
-        "format": "{: %H:%M  %d/%m/%Y}"
+        "format": "{: %H:%M  %d/%m/%Y}"
     },
 
 	// waybar-cpu
@@ -64,7 +64,7 @@
     },
 
     "custom/power": {
-         "format": "Exit",
+         "format": " 󰊳 ",
          "tooltip": false,
          //"on-click": "$HOME/.config/wayfire/scripts/wlogout",
          "on-click": "archlinux-logout",
@@ -123,13 +123,13 @@
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
+            "headphone": "",
+            "hands-free": "",
             "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["vol"]
         },
         "scroll-step": 5.0,
 		// Commands to execute on events
@@ -215,7 +215,7 @@
     },
 
 	"custom/updater":{
-        "format": "  {} ",
+        "format": " {} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) ]]",
         "interval": 15,
