@@ -58,15 +58,16 @@
 	// waybar-custom
     "custom/menu": {
          //"format": "",
-         "format": "",
+         "format": " ",
          "tooltip": false,
-         "on-click": "$HOME/.config/wayfire/scripts/menu",
+         "on-click": "$HOME/.config/wayfire/scripts/fullmenu",
     },
 
     "custom/power": {
-         "format": "襤",
+         "format": "Exit",
          "tooltip": false,
-         "on-click": "$HOME/.config/wayfire/scripts/wlogout",
+         //"on-click": "$HOME/.config/wayfire/scripts/wlogout",
+         "on-click": "archlinux-logout",
     },
 
 	// waybar-disk
@@ -104,11 +105,11 @@
 		"interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
         "format-wifi": " {essid}",
-        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-ethernet": " {bandwidthUpBits} |  {bandwidthDownBits}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "睊 Disconnected",
         "format-disabled": "睊 Disabled",
-        "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
+        "format-alt": " {ipaddr}/{cidr}",
         "tooltip-format": " {ifname} via {gwaddr}",
     },
 
