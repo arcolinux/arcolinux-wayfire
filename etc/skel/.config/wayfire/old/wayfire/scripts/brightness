@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
-
-## Script To Manage Brightness For Archcraft (in Wayland).
-
-iDIR="$HOME/.config/wayfire/mako/icons"
+iDIR="$HOME/.config/hypr/mako/icons"
 
 # Get brightness
 get_backlight() {
-	LIGHT=$(printf "%.0f\n" `light -G`)
+	LIGHT=$(printf "%.0f\n" $(xbacklight -get))
 	echo "${LIGHT}%"
 }
 
@@ -37,12 +32,12 @@ notify_user() {
 
 # Increase brightness
 inc_backlight() {
-	light -A 5 && get_icon && notify_user
+	xbacklight -inc 5 && get_icon && notify_user
 }
 
 # Decrease brightness
 dec_backlight() {
-	light -U 5 && get_icon && notify_user
+	xbacklight -dec 5 && get_icon && notify_user
 }
 
 # Execute accordingly

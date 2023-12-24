@@ -1,19 +1,31 @@
+## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+##
 ## Wofi Config
+
+## Files (absolute path)
+#style=/home/USER/.config/wayfire/wofi/style.css
+#color=/home/USER/.config/wayfire/wofi/colors
 
 ## General
 show=drun
-prompt=Apps
-normal_window=true
+prompt=Search Applications
+normal_window=false
 layer=top
-term=kitty
-columns=2
+term=foot
 
 ## Geometry
-width=700px
-height=500px
+width=1100px
+height=430px
 location=0
+#xoffset=10
+#yoffset=10
+#lines=8
+columns=3
 orientation=vertical
 halign=fill
+#valign=center
+#content_halign=fill
 line_wrap=off
 dynamic_lines=false
 
@@ -23,17 +35,20 @@ allow_images=true
 image_size=24
 
 ## Search
+#search=STRING
 exec_search=false
 hide_search=false
 parse_search=false
+#matching=fuzzy
 insensitive=false
 
 ## Other
 hide_scroll=true
-no_actions=true
+no_actions=false
 sort_order=default
 gtk_dark=true
 filter_rate=100
+#cache_file=/dev/null
 
 ## Keys
 key_expand=Tab
