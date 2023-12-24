@@ -5,7 +5,7 @@
 
 ## launch wofi with alt config
 
-CONFIG="$HOME/.config/wayfire/wofi/config"
+CONFIG="$HOME/.config/wayfire/wofi/config.ini"
 STYLE="$HOME/.config/wayfire/wofi/style.css"
 COLORS="$HOME/.config/wayfire/wofi/colors"
 
