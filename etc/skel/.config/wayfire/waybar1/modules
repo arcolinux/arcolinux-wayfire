@@ -63,7 +63,7 @@
 
     // waybar-change-background
     "custom/changebackground": {
-         "format": " ",
+         "format": "  ",
          "tooltip": false,
          "on-click": "$HOME/.config/wayfire/scripts/wallpaper",
     },

@@ -3,5 +3,10 @@
 folder="/usr/share/backgrounds/arcolinux-wayfire/"
 pic=$(ls $folder/* | shuf -n1)
 
+if [[ ! `pidof swww` ]]; then
+        swww init &
+        sleep 1
+fi
+
 swww img -t any --transition-fps 90 $pic & &>/dev/null
 sleep 1

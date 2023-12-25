@@ -304,10 +304,18 @@ window#waybar.empty #window {
 	font-size: 20px;
 }
 
+#custom-changebackground {
+	margin-right: 6px;
+	padding: 2px 8px;
+	font-size: 20px;
+}
+
+
 /** Common style **/
 #backlight,
 #battery,
 #clock,
+#custom-changebackground
 #disk,
 #memory,
 #custom-updater,

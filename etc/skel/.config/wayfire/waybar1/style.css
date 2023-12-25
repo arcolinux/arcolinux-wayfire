@@ -284,7 +284,6 @@ window#waybar.empty #window {
 
 /** ********** Custom ********** **/
 #custom-menu,
-#custom-changebackground,
 #custom-power {
 	color: #1E212A;
 	margin: 6px 0px;
@@ -306,7 +305,6 @@ window#waybar.empty #window {
 }
 
 #custom-changebackground {
-	background-color: #EB6F92;
 	margin-right: 6px;
 	padding: 2px 8px;
 	font-size: 20px;
