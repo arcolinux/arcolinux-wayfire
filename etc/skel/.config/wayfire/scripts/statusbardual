@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+
+## launch waybar with alt config
+
+pkill waybar
+
+if [[ ! `pidof waybar` ]]; then
+	CONFIG="$HOME/.config/wayfire/waybar1/config.ini"
+	STYLE="$HOME/.config/wayfire/waybar1/style.css"
+
+	waybar --bar main-bar1 --log-level error --config ${CONFIG} --style ${STYLE} &
+
+	CONFIG="$HOME/.config/wayfire/waybar2/config.ini"
+	STYLE="$HOME/.config/wayfire/waybar2/style.css"
+
+	waybar --bar main-bar2 --log-level error --config ${CONFIG} --style ${STYLE} &
+fi

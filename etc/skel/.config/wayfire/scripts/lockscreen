@@ -3,6 +3,8 @@
 ## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
+## ArcoLinux uses ArchLinux-logout
+
 # Background Image
 IMAGE="/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg"
 
@@ -22,7 +24,7 @@ swaylock -f \
 	--indicator-caps-lock \
 	\
 	`# Appearance` \
-	--color ${bg}E6 \
+	--color ${bg}FF \
 	`#--image ${IMAGE} --scaling fill` \
 	--font 'JetBrainsMono Nerd Font' --font-size 18 \
 	\
