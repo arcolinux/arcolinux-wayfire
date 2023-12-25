@@ -53,14 +53,19 @@
         "format": "{: %H:%M  %d/%m/%Y}"
     },
 
-	// waybar-cpu
-
 	// waybar-custom
     "custom/menu": {
          //"format": "",
          "format": "  ",
          "tooltip": false,
          "on-click": "$HOME/.config/wayfire/scripts/fullmenu",
+    },
+
+    // waybar-change-background
+    "custom/changebackground": {
+         "format": "  ",
+         "tooltip": false,
+         "on-click": "$HOME/.config/wayfire/scripts/wallpaper",
     },
 
     "custom/power": {
@@ -183,8 +188,14 @@
         "current-only": false,
     },
 
-	
-	// waybar-temperature
+	// temperature
+    "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C "
+    },
 
 	// waybar-tray
     "tray": {
@@ -192,7 +203,7 @@
         "spacing": 10
     },
 
-	 "custom/weather": {
+	"custom/weather": {
         "format": "{}",
         "format-alt": "{alt}: {}",
         "format-alt-click": "click-right",
@@ -218,7 +229,7 @@
         "format": " {} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) ]]",
-        "interval": 15,
+        "interval": 500,
         "on-click": "foot -e yay -Syu && notify-send 'The system has been updated' "
     },
 

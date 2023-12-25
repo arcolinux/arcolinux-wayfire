@@ -1,0 +1,7 @@
+#!/bin/sh
+
+folder="/usr/share/backgrounds/arcolinux-wayfire/"
+pic=$(ls $folder/* | shuf -n1)
+
+swww img -t any --transition-fps 90 $pic & &>/dev/null
+sleep 1

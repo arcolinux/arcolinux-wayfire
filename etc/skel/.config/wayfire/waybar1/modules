@@ -53,14 +53,19 @@
         "format": "{: %H:%M  %d/%m/%Y}"
     },
 
-	// waybar-cpu
-
 	// waybar-custom
     "custom/menu": {
          //"format": "",
          "format": "  ",
          "tooltip": false,
          "on-click": "$HOME/.config/wayfire/scripts/fullmenu",
+    },
+
+    // waybar-change-background
+    "custom/changebackground": {
+         "format": " ",
+         "tooltip": false,
+         "on-click": "$HOME/.config/wayfire/scripts/wallpaper",
     },
 
     "custom/power": {
@@ -224,7 +229,7 @@
         "format": " {} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) ]]",
-        "interval": 15,
+        "interval": 500,
         "on-click": "foot -e yay -Syu && notify-send 'The system has been updated' "
     },
 
