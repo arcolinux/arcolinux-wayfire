@@ -11,11 +11,9 @@ killall -q waybar
 # Wait until the processes have been shut down
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
+CONFIG="$HOME/.config/wayfire/waybar-stephan/config.ini"
+STYLE="$HOME/.config/wayfire/waybar-stephan/style.css"
+
 if [[ ! `pidof waybar` ]]; then
-	CONFIG="$HOME/.config/wayfire/waybar1/config.ini"
-	STYLE="$HOME/.config/wayfire/waybar1/style.css"
-	waybar --bar main-bar1 --log-level error --config ${CONFIG} --style ${STYLE} &
-	CONFIG="$HOME/.config/wayfire/waybar2/config.ini"
-	STYLE="$HOME/.config/wayfire/waybar2/style.css"
-	waybar --bar main-bar2 --log-level error --config ${CONFIG} --style ${STYLE} &
+	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE} &
 fi

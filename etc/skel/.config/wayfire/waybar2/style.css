@@ -23,14 +23,6 @@ window#waybar.hidden {
 	opacity: 0.5;
 }
 
-window#waybar.empty {}
-
-window#waybar.solo {}
-
-window#waybar.thunar {}
-
-window#waybar.geany {}
-
 /** ********** Backlight ********** **/
 #backlight {
 	border-bottom: 2px solid #9CCFD8;
@@ -293,6 +285,7 @@ window#waybar.empty #window {
 #custom-menu {
 	background-color: #9CCFD8;
 	margin-left: 6px;
+	margin-right: 6px;
 	padding: 2px 6px;
 	font-size: 16px;
 }
@@ -316,8 +309,6 @@ window#waybar.empty #window {
 #battery,
 #clock,
 #custom-changebackground
-#disk,
-#memory,
 #custom-updater,
 #custom-weather,
 #mode,
@@ -330,4 +321,18 @@ window#waybar.empty #window {
 	border-radius: 2px;
 	margin: 6px 0px;
 	padding: 2px 10px;
+}
+
+#memory,#disk {
+	background-color: #2A2E37;
+	margin: 6px 0px;
+	padding: 2px 10px;
+}
+
+#disk {
+	border-bottom: 2px solid #b4befe;
+}
+
+#memory {
+	border-bottom: 2px solid #eba0ac;
 }
