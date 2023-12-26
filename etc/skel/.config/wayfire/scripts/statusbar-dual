@@ -5,16 +5,16 @@
 
 ## launch waybar with alt config
 
-pkill waybar
+# Terminate already running bar instances
+killall -q waybar
+
+# Wait until the processes have been shut down
+while pgrep -x waybar >/dev/null; do sleep 1; done
+
+CONFIG="$HOME/.config/wayfire/waybar2/config.ini"
+STYLE="$HOME/.config/wayfire/waybar2/style.css"
 
 if [[ ! `pidof waybar` ]]; then
-	CONFIG="$HOME/.config/wayfire/waybar1/config.ini"
-	STYLE="$HOME/.config/wayfire/waybar1/style.css"
-
 	waybar --bar main-bar1 --log-level error --config ${CONFIG} --style ${STYLE} &
-
-	CONFIG="$HOME/.config/wayfire/waybar2/config.ini"
-	STYLE="$HOME/.config/wayfire/waybar2/style.css"
-
 	waybar --bar main-bar2 --log-level error --config ${CONFIG} --style ${STYLE} &
 fi

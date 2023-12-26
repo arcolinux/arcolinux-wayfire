@@ -9,7 +9,7 @@ RASI="$DIR/themes/$STYLE/rofi/powermenu.rasi"
 CNFR="$DIR/themes/$STYLE/rofi/confirm.rasi"
 
 # Theme Elements
-prompt="`hostname` (`echo $DESKTOP_SESSION`)"
+prompt="ArcoLinux"
 mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
 
 # Options

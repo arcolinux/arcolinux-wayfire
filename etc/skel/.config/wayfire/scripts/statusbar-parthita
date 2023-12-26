@@ -11,8 +11,8 @@ killall -q waybar
 # Wait until the processes have been shut down
 while pgrep -x waybar >/dev/null; do sleep 1; done
 
-CONFIG="$HOME/.config/wayfire/waybar-hyprland-2/config"
-STYLE="$HOME/.config/wayfire/waybar-hyprland-2/style.css"
+CONFIG="$HOME/.config/wayfire/waybar-parthita/config.ini"
+STYLE="$HOME/.config/wayfire/waybar-parthita/style.css"
 
 if [[ ! `pidof waybar` ]]; then
 	waybar --bar main-bar --log-level error --config ${CONFIG} --style ${STYLE} &
