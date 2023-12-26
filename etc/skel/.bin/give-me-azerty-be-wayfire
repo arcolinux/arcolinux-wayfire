@@ -33,7 +33,7 @@ echo
 
 user=$( who | cut -d ' ' -f1 | uniq)
 
-cp -v /home/$user/.config/wayfire/wayfire-azerty.ini /home/$user/.config/wayfire/wayfire.ini
+cp -v /home/$user/.config/wayfire-azerty.ini /home/$user/.config/wayfire.ini
 
 echo
 echo "###############################################################################"
