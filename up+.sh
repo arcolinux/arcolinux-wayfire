@@ -34,6 +34,19 @@
 echo "Checking for newer files online first"
 git pull
 
+#backup for us
+cp -v etc/skel/.config/wayfire.ini etc/skel/.config/wayfire-qwerty-us.ini
+
+#change to be
+cp -v etc/skel/.config/wayfire.ini etc/skel/.config/wayfire-azerty.ini
+sed -i "s/xkb_layout = us/xkb_layout = be/g" etc/skel/.config/wayfire-azerty.ini
+
+#change to uk
+cp -v etc/skel/.config/wayfire.ini etc/skel/.config/wayfire-qwerty-uk.ini
+sed -i "s/xkb_layout = us/xkb_layout = uk/g" etc/skel/.config/wayfire-qwerty-uk.ini
+
+
+
 # Below command will backup everything inside the project folder
 git add --all .
 
