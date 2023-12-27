@@ -69,7 +69,7 @@
     },
 
     "custom/power": {
-         "format": "  󰊳  ",
+         "format": "󰊳",
          "tooltip": false,
          //"on-click": "$HOME/.config/wayfire/scripts/wlogout",
          "on-click": "archlinux-logout",
