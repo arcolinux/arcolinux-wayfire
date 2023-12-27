@@ -8,7 +8,6 @@
   // Choose the order of the modules idle_inhibitor
   "modules-left": [
     "custom/launcher",
-    "hyprland/workspaces",
     "custom/swap",
     "tray",
   ],
@@ -258,19 +257,19 @@
     "exec": "~/.config/hypr/waybar/scripts/getInputLayout.sh",
     // Interval set only as a fallback, as the value is updated by signal
     "interval": 1,
-    "format": "  {}", // Icon: keyboard
+    "format": "   {}", // Icon: keyboard
     // Signal sent by Sway key binding (~/.config/sway/key-bindings)
     "signal": 1, // SIGHUP
     "tooltip": false,
     "on-click": "~/.config/waybar/scripts/keyhint.sh"
   },
   "hyprland/language": {
-    "format": "  {}"
+    "format": "   {}"
   },
   "custom/launcher": {
     "format": "󰝨",
     //"format": "  ",
-    "on-click": "~/.config/hypr/scripts/fullmenu",
+    "on-click": "~/.config/wayfire/scripts/fullmenu",
     "tooltip": false
   }
 }
