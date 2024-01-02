@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = wayfire
+Target = wayfire-git
+
+[Action]
+Description = Modifying Wayfire Desktop file...
+When = PostTransaction
+Exec = /usr/bin/sed -i -e 's/Exec=.*/Exec=run-wayfire/g' /usr/share/wayland-sessions/wayfire.desktop
