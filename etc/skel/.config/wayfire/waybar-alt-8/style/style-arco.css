@@ -33,11 +33,6 @@ window#waybar {
     background: linear-gradient(0deg, @border-color, black);
     /*background: rgba(1, 117, 84, 0.5);*/
     /*background: @transparent;*/
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
 }
 
 window#waybar.empty #window {    

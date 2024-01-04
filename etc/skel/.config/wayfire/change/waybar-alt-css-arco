@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -r ~/.config/wayfire/waybar/*.css
-cp -r ~/.config/wayfire/waybar-alt-8/style/style-2.css ~/.config/wayfire/waybar/style.css
+cp -r ~/.config/wayfire/waybar-alt-8/style/style-arco.css ~/.config/wayfire/waybar/style.css
 
 # kill first
 if [[ $(pidof waybar) ]]; then
