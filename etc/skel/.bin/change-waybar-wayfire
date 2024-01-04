@@ -8,5 +8,6 @@ yad --title "Desktop Help" --form --width=325 --height=400 --text="<b>Choose Way
 --field="<b>Waybar alt-6</b>":fbtn "./.config/wayfire/change/waybar-alt-6" \
 --field="<b>Waybar alt-7</b>":fbtn "./.config/wayfire/change/waybar-alt-7" \
 --field="<b>Waybar alt-8 css choices</b>":fbtn "./.config/wayfire/change/waybar-alt-8" \
+--field="<b>Waybar alt-9 pywal</b>":fbtn "./.config/wayfire/change/waybar-alt-9" \
 --field="<b>Back to Default</b>":fbtn "./.config/wayfire/change/waybar-arco" \
 --button=Cancel!gtk-cancel:1
