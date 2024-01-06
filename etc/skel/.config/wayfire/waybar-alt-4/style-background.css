@@ -118,6 +118,7 @@ window#waybar {
 #custom-changewaybar,
 #custom-background,
 #custom-cava-internal,
+#custom-spotify,
 #battery,
 #cpu,
 #memory,
@@ -144,6 +145,12 @@ window#waybar {
 /* -----------------------------------------------------------------------------
    * Module styles
    * -------------------------------------------------------------------------- */
+#custom-spotify {
+    border-radius: 10px;
+    color: @mauve;
+    margin-left: 5px;
+}
+
 #custom-cava-internal {
     border-radius: 10px;
     color: @mauve;
