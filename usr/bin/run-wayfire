@@ -85,6 +85,9 @@ fi
 ## set default cursor size
 XCURSOR_SIZE=24
 
+## save timezone for waybar usage
+export TZ=$(cat /etc/timezone)
+
 ## Start Wayfire
 sleep 0.5;
 wayfire
