@@ -50,7 +50,7 @@
 
 	// waybar-clock
     "clock": {
-        "format": "{: %B %d, %Y %R}"
+        "format": "{:L%A %B %d %Y %R}",
     },
 
 	// waybar-custom
