@@ -58,7 +58,7 @@
          //"format": "",
          "format": "  ",
          "tooltip": false,
-         "on-click": "$HOME/.config/wayfire/scripts/fullmenu",
+         "on-click": "$HOME/.config/wayfire/scripts/fullmenut",
     },
 
     // waybar-change-background
